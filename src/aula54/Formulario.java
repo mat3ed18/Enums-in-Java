@@ -15,9 +15,9 @@ public class Formulario {
     private String nome;
     private Genero genero;
 
-    public Formulario(String nome, Genero genero) {
+    public Formulario(String nome, String genero) {
         this.nome = nome;
-        this.genero = genero;
+        this.genero = (genero.equals("M") || genero.equals("M".toLowerCase()) || genero.equals("F") || genero.equals("F".toLowerCase())) ? (genero.equals("M") || genero.equals("M".toLowerCase())) ? Genero.MASCULINO : Genero.FEMININO : null;
     }
 
     public Formulario() {
@@ -39,4 +39,9 @@ public class Formulario {
         this.genero = genero;
     }
 
+    @Override
+    public String toString() {
+        return "Formulario{" + "nome=" + nome + ", genero=" + genero + '}';
+    }
+    
 }

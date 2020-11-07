@@ -2,24 +2,25 @@ public class Principal {
 
     public static void main(String[] args) {
         
-        // AULA 01
+        System.out.println("\n# AULA 01\n");
         
         usandoConstantes();
         usandoEnum();
         
-        // AULA 02
+        System.out.println("\n# AULA 02\n");
         
         aula54.DiaSemana dia = aula54.DiaSemana.SEGUNDA;
         System.out.println(dia.toString() + " - " + dia.getValor());
         aula54.Data data = new aula54.Data(1, 4, 2016, aula54.DiaSemana.SEXTA);
-        aula54.Formulario formulario = new aula54.Formulario("Mateus", null);
+        aula54.Formulario formulario = new aula54.Formulario("Mateus", "m");
+        System.out.println(formulario.toString());
         
-        // AULA 03
+        System.out.println("\n# AULA 03\n");
         
         aula55.TesteEnum.testeEnum();
         aula55.TesteEnum2.testeEnum();
         
-        // AULA 04
+        System.out.println("\n# AULA 04\n");
         
         for (aula56.TipoDocumento doc : aula56.TipoDocumento.values()) {
             System.out.println(doc + " - " + doc.geraNumeroTeste());
